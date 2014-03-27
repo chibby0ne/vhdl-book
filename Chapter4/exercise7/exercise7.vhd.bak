@@ -1,0 +1,46 @@
+------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+------------------------------
+entity ent is
+--generic declarations
+    port (
+        v: in std_logic_vector(3 downto 0) ;
+        x: in std_logic_vector(3 downto 0) ;
+        y: in std_logic_vector(7 downto 0) ;
+        z: in std_logic_vector(7 downto 0) ;
+        out1: out boolean ;
+        out2: out boolean ;
+        out3: out boolean ;
+        out4: out boolean );
+end entity;
+------------------------------
+architecture circuit of ent is
+    signal v_sig: signed := signed(v);
+    signal x_sig: signed := signed(x);
+    signal y_sig: signed := signed(y);
+    signal z_sig: signed := signed(z);
+begin
+    if (v_sig < x_sig) then
+        out1 <= true;
+    else
+        out2 <= false;
+    end if;
+    if (v_sig + x_sig <= z_sig) then
+        out2 <= true;
+    else
+        out2 <= false;
+    end if;
+    if (y_sig = (abs(x_sig))**3) then
+        out3 <= true;
+    else
+        out3 <= false;
+    end if;
+    if ((7 * v_sig) rem x_sig = (7 * v_sig) mod x_sig) then
+        out4 <= true;
+    else
+        out4 <= false;
+    end if;
+end architecture;
+------------------------------

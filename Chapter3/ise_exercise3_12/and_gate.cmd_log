@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/and_gate.xst" -ofn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/and_gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 and_gate.ngc and_gate.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o and_gate_map.ncd and_gate.ngd and_gate.pcf 
+par -w -intstyle ise -ol high -mt off and_gate_map.ncd and_gate.ncd and_gate.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml and_gate.twx and_gate.ncd -o and_gate.twr and_gate.pcf 
+xst -intstyle ise -ifn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/and_gate.xst" -ofn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/and_gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 and_gate.ngc and_gate.ngd  
+xst -intstyle ise -ifn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/and_gate.xst" -ofn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/and_gate.syr" 
+xst -intstyle ise -ifn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/and_gate.xst" -ofn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/and_gate.syr" 

@@ -1,0 +1,21 @@
+Z:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/texercise7.vhd {1 {vcom -work work -2002 -explicit -vopt Z:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/texercise7.vhd
+Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity test_circuit
+-- Compiling architecture only of test_circuit
+
+} {} {}} Z:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/exercise7.vhd {2 {vcom -work work -2002 -explicit -vopt Z:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/exercise7.vhd
+Model Technology ModelSim SE vcom 6.5 Compiler 2009.01 Jan 22 2009
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity ent
+-- Compiling architecture circuit of ent
+** Warning: [9] Z:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/exercise7.vhd(22): (vcom-1013) Initial value of "v_sig" depends on value of signal "v".
+** Warning: [9] Z:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/exercise7.vhd(23): (vcom-1013) Initial value of "x_sig" depends on value of signal "x".
+** Warning: [9] Z:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/exercise7.vhd(24): (vcom-1013) Initial value of "y_sig" depends on value of signal "y".
+** Warning: [9] Z:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/exercise7.vhd(25): (vcom-1013) Initial value of "z_sig" depends on value of signal "z".
+
+} {} {}}

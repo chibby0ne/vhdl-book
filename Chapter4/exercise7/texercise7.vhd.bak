@@ -1,0 +1,53 @@
+------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+------------------------------
+entity test_circuit is
+--generic declarations
+end entity;
+------------------------------
+architecture only of test_circuit is
+    --DUT declaration--
+    component ent is
+        port (
+                 v: in std_logic_vector(3 downto 0) ;
+                 x: in std_logic_vector(3 downto 0) ;
+                 y: in std_logic_vector(7 downto 0) ;
+                 z: in std_logic_vector(7 downto 0) ;
+                 out1: out boolean ;
+                 out2: out boolean ;
+                 out3: out boolean ;
+                 out4: out boolean );
+    end component;
+    -- signal declaration --
+    signal v_tb: std_logic_vector(3 downto 0);
+    signal x_tb: std_logic_vector(3 downto 0);
+    signal y_tb: std_logic_vector(7 downto 0);
+    signal z_tb: std_logic_vector(7 downto 0);
+    signal out1_tb: boolean ;
+    signal out2_tb: boolean ;
+    signal out3_tb: boolean ;
+    signal out4_tb: boolean ;
+
+begin
+    -- DUT instantiation
+    dut : ent
+    port map (
+    v => v_tb;
+    x => x_tb;
+    y => y_tb;
+    z => z_tb;
+    out1 => out1_tb;
+    out2 => out2_tb;
+    out3 => out3_tb;
+    out4 => out4_tb;
+);
+
+-- stimuli generation
+    v_tb <= "0011";
+    x_tb <= "1100";
+    y_tb <= "01000000";
+    z_tb <= "11111111";
+end architecture;
+

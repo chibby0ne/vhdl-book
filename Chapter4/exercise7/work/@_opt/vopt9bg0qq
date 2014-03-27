@@ -1,0 +1,69 @@
+m255
+K3
+13
+cModel Technology
+Z0 dZ:\home\tesla\Documents\VHDL\book\Chapter4\exercise7
+T_opt
+Z1 VkRLU]F944JjjPa5MRh_7]1
+Z2 04 12 4 work test_circuit only 1
+Z3 =1-047d7bc027f8-5239da11-29e-37
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.5;42
+Eent
+Z7 w1379523041
+Z8 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z10 8Z:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/exercise7.vhd
+Z11 FZ:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/exercise7.vhd
+l0
+L6
+Z12 V:ch8ICE[Xf]055h3BYBZ;0
+Z13 OE;C;6.5;42
+32
+Z14 o-work work -2002 -explicit
+Z15 tExplicit 1
+Z16 !s100 82PfEh8AfD9oMa@7EQXCn3
+Acircuit
+R8
+R9
+Z17 DEx4 work 3 ent 0 22 :ch8ICE[Xf]055h3BYBZ;0
+l25
+L20
+Z18 VjSWlBjNl9XNQNA1eg:2X91
+R13
+32
+Z19 Mx2 4 ieee 14 std_logic_1164
+Z20 Mx1 4 ieee 11 numeric_std
+R14
+R15
+Z21 !s100 8fb5Z`z`>D981OjE[=L;F1
+Etest_circuit
+Z22 w1379523071
+Z23 DPx21 C:\modeltech_6.5\ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z24 DPx21 C:\modeltech_6.5\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+Z25 8Z:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/texercise7.vhd
+Z26 FZ:/home/tesla/Documents/VHDL/book/Chapter4/exercise7/texercise7.vhd
+l0
+L6
+Z27 Vaj]kzWLA<bRn9OOF1d^VD3
+R13
+R14
+R15
+Z28 !s100 =75ZULo>@nmKVk^]z4I2Q1
+Aonly
+DEx57 Z:\home\tesla\Documents\VHDL\book\Chapter4\exercise7\work 3 ent 0 22 :ch8ICE[Xf]055h3BYBZ;0
+R23
+R24
+DEx57 Z:\home\tesla\Documents\VHDL\book\Chapter4\exercise7\work 12 test_circuit 0 22 aj]kzWLA<bRn9OOF1d^VD3
+32
+Mx2 21 C:\modeltech_6.5\ieee 14 std_logic_1164
+Mx1 21 C:\modeltech_6.5\ieee 11 numeric_std
+l35
+L10
+Z29 VS8IQ`NU`UHzXg3MD>fezC2
+R13
+R14
+R15
+Z30 !s100 >nPbMMlmO7[MR3De4JHmM2

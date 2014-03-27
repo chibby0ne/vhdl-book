@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/circuit.xst" -ofn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/circuit.syr" 
+xst -intstyle ise -ifn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/circuit.xst" -ofn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/circuit.syr" 
+xst -intstyle ise -ifn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/circuit.xst" -ofn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/circuit.syr" 
+xst -intstyle ise -ifn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/circuit.xst" -ofn "/home/tesla/Documents/VHDL/book/Chapter3/ise_exercise3_12/circuit.syr" 
