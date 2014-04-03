@@ -1,0 +1,8 @@
+t=50 ns i=0
+t=150 ns i=1
+t=250 ns i=2
+t=350 ns i=3
+t=450 ns i=4
+t=550 ns i=5
+t=650 ns i=6
+t=750 ns i=7

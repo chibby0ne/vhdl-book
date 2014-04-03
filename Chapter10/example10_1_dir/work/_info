@@ -1,0 +1,45 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tesla/Documents/GitHub/vhdl-book/Chapter10/example10_1_dir
+Ewrite_to_file
+Z1 w1396286773
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+R0
+Z3 8C:/Users/tesla/Documents/GitHub/vhdl-book/Chapter10/example10_1_dir/example10_1/example10_1.vhd
+Z4 FC:/Users/tesla/Documents/GitHub/vhdl-book/Chapter10/example10_1_dir/example10_1/example10_1.vhd
+l0
+L11
+Van_gXm6m6keTA4ST4`Sm>0
+!s100 S5F^9aCkc4<TL3o]16iL?3
+Z5 OP;C;10.3;59
+32
+Z6 !s110 1396286778
+!i10b 1
+Z7 !s108 1396286778.316000
+Z8 !s90 -reportprogress|300|-work|work|C:/Users/tesla/Documents/GitHub/vhdl-book/Chapter10/example10_1_dir/example10_1/example10_1.vhd|
+Z9 !s107 C:/Users/tesla/Documents/GitHub/vhdl-book/Chapter10/example10_1_dir/example10_1/example10_1.vhd|
+Z10 o-work work -O0
+Z11 tExplicit 1
+Acircuit
+R2
+Z12 DEx4 work 13 write_to_file 0 22 an_gXm6m6keTA4ST4`Sm>0
+l18
+L14
+V8AB67bR6GYYk9[o5NFzAP1
+!s100 WTYh5dIZkITEL1IYc_BXe0
+R5
+32
+R6
+!i10b 1
+R7
+R8
+R9
+R10
+R11

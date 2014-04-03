@@ -12,7 +12,7 @@ entity write_to_file is
 end entity write_to_file;
 --------------------------------------
 architecture circuit of write_to_file is
-    constant period: time := 100ns;
+    constant period: time := 100 ns;
     signal clk: bit := '0';
     file f: text open write_mode is "test_file.txt";
 begin
@@ -20,7 +20,7 @@ begin
         constant str1: string(1 to 2) := "t=";
         constant str2: string(1 to 3) := " i=";
         variable l: line;
-        variable t: time := 0ns;
+        variable t: time := 0 ns;
         variable i: natural range 0 to 7 := 0;
     begin
         wait for period/2;
