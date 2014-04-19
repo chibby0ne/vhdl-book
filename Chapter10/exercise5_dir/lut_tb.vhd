@@ -7,9 +7,12 @@
 --! @date: 2014-04-03
 --!
 --!
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 --------------------------------------
 entity lut_tb is
-    generic (PERIOD: time := 50);
+    generic (PERIOD: time := 50 ns);
 end entity lut_tb;
 --------------------------------------
 architecture circuit of lut_tb is
@@ -25,8 +28,9 @@ architecture circuit of lut_tb is
    
    -- signal declarations
    signal clk_tb: std_logic := '0';
-   signal inp_tb: integer range 0 to 7 := '0';
+   signal inp_tb: integer range 0 to 7 := 0;
    signal outp_tb: std_logic_vector(2 downto 0);
+   constant tp: time := 10 ns;
 
    type t_lut is array (0 to 7) of std_logic_vector(2 downto 0);
    constant luts_ver: t_lut := (
@@ -53,34 +57,34 @@ begin
 
     
     -- stimuli generation (inp)
-    process (clk_tb)
-        variable i: natural range 0 to 8 := 1;
+    process 
+        variable i: natural range 0 to 7 := 0;
     begin
-        if (now < 400) then
-            if (clk_tb'event and clk = '1' ) then
-                inp_tb <= i;
-                i = i + 1;
-            end if;
+        if (now < 350 ns) then
+            wait for PERIOD/2 + tp;
+            inp_tb <= i;
+            i := i + 1;
+            wait for PERIOD/2 - tp;
         else
             wait;
         end if;
     end process;
 
     -- output verification
-    process(clk_tb)
-        variable out_ver: std_logic_vector(2 downto 0);
+    process
+        variable outp_ver: std_logic_vector(2 downto 0);
     begin
-        if (now < 400) then
-            if (clk'event and clk = '1') then
-                out_ver := luts_ver(to_integer(unsigned(inp_tb)));
-                assert out_tb = out_ver
-                report "results is not expected at t = " & now'image
-                severity failure
-            end if;
+        if (now < 350 ns) then
+            wait for PERIOD/2 + tp;
+            outp_ver := luts_ver(inp_tb);
+            assert outp_tb = outp_ver
+            report "results is not expected at t = " & time'image(now)
+            severity failure;
+            wait for PERIOD/2 - tp;
         else
             assert false
             report "all good"
-            severity note
+            severity note;
             wait;
         end if;
     end process;

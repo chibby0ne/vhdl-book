@@ -8,17 +8,17 @@
 --------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_all;
+use ieee.numeric_std.all;
 use work.my_components.all;
 --------------------------------------
 entity shift_register is
 generic (M: positive := 4;   -- num. of stages
          N: positive := 8);  -- bits per stage
     port (
-        clk, load: in bit;
-        x: in bit_vector(N-1 downto 0);
+        clk, load: in std_logic;
+        x: in std_logic_vector(N-1 downto 0);
         d: in twoD(0 to M-1, N-1 downto 0);
-        y: out bit_vector(N-1 downto 0));
+        y: out std_logic_vector(N-1 downto 0));
 end entity shift_register;
 --------------------------------------
 architecture circuit of shift_register is

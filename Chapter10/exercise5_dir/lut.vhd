@@ -7,6 +7,10 @@
 --! @date: 2014-04-03
 --!
 --!
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
 --------------------------------------
 entity lut is
 --generic declarations

@@ -6,12 +6,20 @@
 --!
 --!
 --------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+--------------------------------------
+
+--------------------------------------
 entity flipflop is
 --generic declarations
     port (
         d, clk: in std_logic;
         q: out std_logic);
 end entity flipflop;
+--------------------------------------
+
 --------------------------------------
 architecture circuit of flipflop is
 --signals and declarations

@@ -8,7 +8,7 @@
 --------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_all;
+use ieee.numeric_std.all;
 --------------------------------------
 package my_components is
     type twoD is array (natural range <>, natural range <>) of std_logic;
