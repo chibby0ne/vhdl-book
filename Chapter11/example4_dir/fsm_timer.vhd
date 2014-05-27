@@ -1,9 +1,9 @@
+--------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 --------------------------------------
 entity simple_car_alarm is
---generic declarations
     port (
         clk, rst, remote, sensors: in std_logic;
         siren: out std_logic);
